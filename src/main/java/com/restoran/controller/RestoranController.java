@@ -55,6 +55,10 @@ public class RestoranController {
 	public String goToTestimonial() {
 		return "testimonial";
 	}
+	@RequestMapping("login")
+	public String goToLogin() {
+		return "login";
+	}
 	
 //	@PostMapping("/tableBooking")
 //	public String tableBooking(@ModelAttribute Booking booking) {
