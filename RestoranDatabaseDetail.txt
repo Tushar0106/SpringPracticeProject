@@ -1,0 +1,46 @@
+PROJECT NAME : Restoran
+
+DATABASE NAME: restoran
+
+===> Book a Table Online
+TABLE NAME:booking
+	tableId
+	requestId
+	clientName
+	email
+	dateAndTime
+	people
+	specialRequest
+
+===> CHEFS
+TABLE NAME: chefs
+	chefId
+	chefNane
+	designation
+	chefAvatar
+	chefRegDate
+
+===> CLIENT
+TABLE NAME: clients
+	clientId
+	clientName
+	clientMsg
+	clientAvatar
+	clientRegDate
+
+===> MENU ITEMS
+TABLE NAME: items
+	itemId
+	itemName
+	itemDisc
+	itemPrice
+	itemAvatar
+
+===> CONTACT
+TABLE NAME: contacts
+	contactId
+	contactName
+	contactEmail
+	contactSubject
+	contactMsg
+	contactRegDate
