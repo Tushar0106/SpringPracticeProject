@@ -58,9 +58,9 @@ public class AdminController {
 	}
 	
 	//Find one row food by ID
-		public Optional<Food> getFoodById(@NonNull Integer foodId) {
-			return foodRepository.findById(foodId); 
-		}
+	public Optional<Food> getFoodById(Integer foodId) {
+		return foodRepository.findById(foodId); 
+	}
 
 	@RequestMapping("/addFood")
 	public String add() {
@@ -104,7 +104,6 @@ public class AdminController {
         // Save the file to the specified location
         Files.copy(imageData.getInputStream(), filePath);
         adminService.addFood(food);
-        
         
 		model.addAttribute("successMessage", "Food item uploaded successfully");
 		return "admin/addFood";
