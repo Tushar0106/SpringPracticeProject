@@ -16,17 +16,30 @@
         </a>
         <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a th:href="@{/bookingTable}">
+            <a th:href="@{/requestlist}">
               <i class="bi bi-circle"></i><span>Booking Request</span>
             </a>
           </li>
-          <!--<li>
-            <a href="tables-data.html">
-              <i class="bi bi-circle"></i><span>Data Tables</span>
-            </a>
-          </li>-->
         </ul>
       </li><!-- End Tables Nav -->
+      
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#food-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-patch-plus"></i><span>Food</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="food-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a th:href="@{/addFood}">
+              <i class="bi bi-circle"></i><span>Add Food</span>
+            </a>
+          </li>
+          <li>
+            <a th:href="@{/foodlist}">
+              <i class="bi bi-circle"></i><span>List Food</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Food -->
 
       <li class="nav-heading">Pages</li>
 

@@ -15,4 +15,6 @@ public class RestoranService {
 	public void bookTable(Booking booking) {
 		restoranRepository.save(booking);
 	}
+	
+	
 }
